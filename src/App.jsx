@@ -1,5 +1,11 @@
+//npm install redux
+//npm install --save-dev jest @babel/preset-env @babel/preset-react eslint-plugin-jes
+//npm install --save-dev deep-freeze
+//npm install react-redux
+//npm install @reduxjs/toolkit
+//npm install json-server --save-dev
+//npm install axios
 //npm install @tanstack/react-query
-
 
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import AnecdoteForm from './components/AnecdoteForm'
@@ -16,7 +22,7 @@ const App = () => {
     //refetchOnWindowFocus: false
   })
 
-  console.log(JSON.parse(JSON.stringify(result)))
+  //console.log(JSON.parse(JSON.stringify(result)))
 
   if ( result.isLoading ) {
     return <div>loading data...</div>

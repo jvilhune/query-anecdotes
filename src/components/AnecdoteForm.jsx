@@ -49,7 +49,6 @@ const AnecdoteForm = () => {
     else { 
       newAnecdoteMutation.mutate({ content, votes: 0 })
       event.target.anecdote.value = ''
-      newAnecdoteMutation.mutate({ content, votes: 0 })
       return true
     }
   }
